@@ -1,0 +1,137 @@
+/* Navbar styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    z-index: 50;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.main-content {
+    padding-top: 64px;
+    position: relative;
+    z-index: 30;
+}
+
+/* General section styles */
+section {
+    scroll-margin-top: 64px;
+    padding: 3rem 0;
+}
+
+/* Colors */
+.text-navy-900 {
+    color: #1a365d;
+}
+
+.bg-navy-900 {
+    background-color: #1a365d;
+}
+
+/* Features section styles */
+.module-btn {
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    border: 1px solid #e5e7eb;
+}
+
+.module-btn:hover {
+    transform: translateX(5px);
+}
+
+.module-btn.active {
+    background-color: #3B82F6;
+    color: white;
+    border-color: #3B82F6;
+}
+
+.module-btn.active .icon-container {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.module-btn.active svg {
+    color: white;
+}
+
+.icon-container {
+    color: #2563eb;
+    transition: background-color 0.3s ease;
+}
+
+#module-content {
+    min-height: 400px;
+}
+
+/* Cards and hover effects */
+.benefit-card {
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+.disease-card {
+    transition: transform 0.3s;
+}
+
+.disease-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Pricing section */
+.pricing-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card.highlight {
+    border: 2px solid #3b82f6;
+}
+
+/* Mobile menu */
+#mobileMenu {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: white;
+    z-index: 40;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+#mobileMenu a {
+    display: block;
+    padding: 1rem;
+    color: #4B5563;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+#mobileMenu a:last-child {
+    border-bottom: none;
+}
+
+#mobileMenu a:hover {
+    background-color: #F3F4F6;
+    color: #2563EB;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar-desktop {
+        display: none;
+    }
+    .navbar-mobile {
+        display: block;
+    }
+    .nav-arrow {
+        display: none;
+    }
+}
